@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    container_name: app-cvstore-back
+    restart: always
+    build: .
+    ports:
+      - "8888:8888"
+    external_links:
+      - mongo-cvstore
